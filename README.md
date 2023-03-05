@@ -1,10 +1,26 @@
 # JS-ScreenResolutionSystem
 A pure JS screen resolution utility class
 
+
+# How To Use:
+
+```
+  const manager = new ScreenResolutionManager({
+    mobileBreakpoint: 480,
+    tabletBreakpoint: 1024
+  });
+  
+  manager.subscribe(deviceType => {
+    console.log(`Device type changed to: ${deviceType}`);
+  });
+```
+
+
+
+
+# Motivation:
+
 I was tired to use code like this:
-
-
-
 
 
 ```
