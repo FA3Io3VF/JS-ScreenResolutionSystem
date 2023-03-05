@@ -12,7 +12,16 @@ A pure JS screen resolution utility class
   
   manager.subscribe(deviceType => {
     console.log(`Device type changed to: ${deviceType}`);
+    /* Your code here */
   });
+  
+  manager.redirectTo({
+    mobile: "http://127.0.0.1:5500/mobile.html",
+    tablet: "http://127.0.0.1:5500/tablet.html",
+    desktop: "http://127.0.0.1:5500/desktop.html"
+  });
+  
+  manager.init();
 ```
 
 
