@@ -75,19 +75,4 @@ class ScreenResolution {
     }
   }
 
-  const manager = new ScreenResolutionManager({
-    mobileBreakpoint: 480,
-    tabletBreakpoint: 1024
-  });
-  
-  manager.subscribe(deviceType => {
-    console.log(`Device type changed to: ${deviceType}`);
-  });
-  
-  manager.redirectTo({
-    mobile: "http://127.0.0.1:5500/mobile.html",
-    tablet: "http://127.0.0.1:5500/layout1.html",
-    desktop: "http://127.0.0.1:5500/layout1.html"
-  });
-  
-  manager.init();
+
